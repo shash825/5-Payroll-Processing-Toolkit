@@ -1,3 +1,4 @@
+//step 2
 const employees = [
     {
         name: "Aiden",
@@ -6,7 +7,7 @@ const employees = [
     },
     {
         name: "Rj",
-        hoursWorked: 40,
+        hoursWorked: 45,
         hourlyRate: 20
     }, 
     {
@@ -15,4 +16,10 @@ const employees = [
         hourlyRate: 18
     }
 ];
+
+//step 3
+function calculateBasePay(rate, hours) {
+    const regularHours = Math.min(hours, 40);
+    return regularHours * rate;
+}
 
